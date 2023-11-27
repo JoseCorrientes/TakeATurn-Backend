@@ -9,7 +9,7 @@ export const connectDB = async ()=>{
             console.log('Se conecto correctamente a la DB.')
 
         }catch(e) {
-            console.log('Error al conectar a la DB.')
+            console.log(`Error al conectar a la DB. ${e}`)
         }
 
 
