@@ -49,9 +49,15 @@ export default async function sendEmailBrevo(data,destination) {
     <p1><b>Hora:</b> ${data.hour}/${data.minute}</p1> 
     <p>Lo espero...</p>
     <br>
-    <p>dra.${data.doctor}</p>
+    <p>La Doctora.</p>
     <hr>
-    <p>Si por cualquier motivo no pudiera asistir le ruego cancele el turno a traves de la web: xxxxxxx</p>
+    <p>Si por cualquier motivo no pudiera asistir le ruego cancele el turno a través de nuestra web: 
+    <link
+        href="https://odontoturn.vercel.app"
+    >
+    https://odontoturn.vercel.app
+    </link>
+    </p>
     </body>
     </html>`
 
