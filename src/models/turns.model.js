@@ -39,7 +39,7 @@ const turnSchema = new Schema({
     },
     comment: String,
     doctor: {
-        type: Number,
+        type: String,
         require: [true, 'El doctor es requerido']
     }
 })

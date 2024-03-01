@@ -16,7 +16,7 @@ const app = express()
 
 app.use('/turns', turns)
 app.use('/mails', mails)
-//app.use('/test', test);
+app.use('/test', test);
 app.use('/admin', admin);               //ruta del administrador superusuario
 app.use('/doctors', doctors);           //ruta del doctor comun usuario 
 

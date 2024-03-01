@@ -1,15 +1,15 @@
-import sendEmailBrevo from "../services/email.service.js"
+import { sendEmailBrevo} from "../services/email.service.js"
 
+
+//-funcion llamada cuando se cancela el turno desde el doctor.
 async function sendMailAboutCancelTurn (req, res) {
-    const data = req.body
-    let result = await sendEmailBrevo(data, 'professional')  
-    return res.status(200).json({status: 'ok', message: 'email sended to Professional'})
+    const data = req.body.data
+    const sender = req.body.sender
+    const doctorData = req.body.loginDoctorData;
+    let result = await sendEmailBrevo(data, sender, doctorData, 'cancel')  
+    if (result==200)return res.status(200).json({status: 'Ok', message: 'email sended'})
+    else return res.status(200).json({status: 'Error', message:"email wasn't sended"})
 }
 
-async function sendMailAboutCreateTurn (req, res) {
-    const data = req.body
-    let result = await sendEmailBrevo(data,'patient')
-    return res.status(200).json({statu: 'ok', message: 'email sended to Patient'})
-}
 
-export {sendMailAboutCancelTurn, sendMailAboutCreateTurn}
+export {sendMailAboutCancelTurn  }

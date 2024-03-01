@@ -1,6 +1,8 @@
 export function whatTurnIs(hour, minute) {
     let data=hour+minute;
     switch (data) {
+        case '0000':
+            return 99;
         case '0800':
             return 0;
         case '0830':
