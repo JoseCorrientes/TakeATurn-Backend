@@ -101,7 +101,7 @@ const existAdminService = async ()=>{
             stringName: 'admin',
             title: 'Dra.',
             email: 'admin@gmail.com',
-            password: 'U2FsdGVkX18Di0ibeV+Lviuyk72IsjieKUa4o5I3RjxQk4DSIK3KIugXQmEM5svx', //'adminadminadmin',
+            password: encryptData('adminadminadmin'), //'adminadminadmin',
             active: true,
             admin: true
         }
