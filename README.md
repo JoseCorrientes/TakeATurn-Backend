@@ -1,2 +1,2 @@
-# TakeATurn-Backend
-This is a backend deployed in render. It works connected to a mongo database.
+# TakeATurnBackend-Mayra
+The backend has been designed to Mayra Aresti. It's an app that allows patients to pick up a turn on a schedule
