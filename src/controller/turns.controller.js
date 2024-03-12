@@ -611,6 +611,7 @@ const patientCreate = async (req, res) => {
   } else created = true;
   let patientData = {};
   let doctorData = user;
+  console.log('llega antes de sendemailbrevo')
   let result3 = await sendEmailBrevo(data, "patient", doctorData, "create");
 
   if (result3 == 200) emailed = true;
