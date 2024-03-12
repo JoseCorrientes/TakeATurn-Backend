@@ -38,7 +38,7 @@ export async function sendEmailBrevo(data,sender, doctorData, typeOperation) {
     <link
         href="https://takeaturn-frontend.vercel.app/"
     >
-    https://takeaturn-frontend.vercel.app
+    takeaturn-frontend.vercel.app
     </link>
     </p>
     </body>
@@ -57,7 +57,7 @@ export async function sendEmailBrevo(data,sender, doctorData, typeOperation) {
     <link
         href="https://takeaturn-frontend.vercel.app/"
     >
-    https://takeaturn-frontend.vercel.app
+    takeaturn-frontend.vercel.app
     </link>
     </p>
     </body>
@@ -123,7 +123,7 @@ export async function sendEmailBrevoMultiple(data,sender, doctorData, typeOperat
         <link
             href="https://takeaturn-frontend.vercel.app/"
         >
-        https://takeaturn-frontend.vercel.app
+        takeaturn-frontend.vercel.app
         </link>
         </p>
         </body>
