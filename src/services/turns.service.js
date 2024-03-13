@@ -8,6 +8,7 @@ const deleteAntiquesRecordsDBService = async ()=>{
         let actualYear = today.getFullYear();
         let actualMonth = today.getMonth()+1;
         let actualDay = today.getDate();
+
         let result = await Turns.deleteMany(
                 { $or: [
                         { year: { $lt: actualYear } },
